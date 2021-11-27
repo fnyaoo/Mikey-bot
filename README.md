@@ -1,7 +1,8 @@
 # Mikey-bot(rus)
 Discord bot with mongoDB
 # .env
-
-BOT_TOKEN=**token**\n
-MONGO_COONECTION_LINK=**connection link**
-
+First you need to create `.evn` file and add there:
+```
+BOT_TOKEN=*token*
+MONGO_COONECTION_LINK=*connection link*
+```

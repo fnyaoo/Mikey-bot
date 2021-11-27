@@ -14,9 +14,9 @@ collservers = cluster.server.guilds
 intents = discord.Intents.all()
 bot = commands.Bot(command_prefix = settings['PREFIX'], intents=intents, case_insensitive=True, strip_after_prefix=True)
 
+inter_client = InteractionClient(bot)
 
 bot.remove_command('help')
-
 
 @bot.command() 
 @is_admin()

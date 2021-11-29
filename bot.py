@@ -81,9 +81,10 @@ async def on_message(message):
             await bot.process_commands(message)
 
 @bot.event
-async def on_message_edit(before,after):
+async def on_message_edit(before, after):
     if before.content.lower().startswith('!'):
-        await bot.process_commands(after)
+        if before.content != after.content:
+            await bot.process_commands(after)
 
 @bot.event
 async def on_member_join(member):

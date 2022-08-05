@@ -1,4 +1,4 @@
-# Mikey-bot(rus)
+# Mikey-bot(ru)
 Discord bot with mongoDB
 # .env
 First you need to create `.evn` file and add there:
